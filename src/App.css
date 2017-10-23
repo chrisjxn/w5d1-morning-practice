@@ -68,3 +68,51 @@
     color: grey;
   }
 }
+
+
+.square {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 25px;
+}
+
+.animation1 {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.animation2 {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  25% {
+    background: red;
+  }
+  50% {
+    background: orange;
+  }
+  75% {
+    background: blue;
+  }
+  100% {
+    background: purple;
+    transform: rotate(360deg);
+  }
+}
+
+.tire {
+  width: 100px;
+  height: 100px;
+  background: lightgray;
+  margin: 50px;
+  border-radius: 50%;
+}
